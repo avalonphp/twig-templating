@@ -1,0 +1,20 @@
+{
+    "name": "radium/twig-templating",
+    "description": "Adds support for Twig template rendering.",
+    "keywords": ["radium", "twig", "templating"],
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Jack Polgar",
+            "email": "jack@polgar.id.au"
+        }
+    ],
+    "require": {
+        "twig/twig": "1.16.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Radium\\Templating\\": "src/"
+        }
+    }
+}
