@@ -42,10 +42,10 @@ class HTML extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('link_to', ['Radium\Helpers\HTML', 'link']),
-            new Twig_SimpleFunction('link_to_unless_current', ['Radium\Helpers\HTML', 'linkToUnlessCurrent']),
-            new Twig_SimpleFunction('css_link_tag', ['Radium\Helpers\HTML', 'cssLinkTag']),
-            new Twig_SimpleFunction('js_inc_tag', ['Radium\Helpers\HTML', 'jsIncTag'])
+            new Twig_SimpleFunction('link_to', ['Radium\Helpers\HTML', 'link'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('link_to_unless_current', ['Radium\Helpers\HTML', 'linkToUnlessCurrent'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('css_link_tag', ['Radium\Helpers\HTML', 'cssLinkTag'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('js_inc_tag', ['Radium\Helpers\HTML', 'jsIncTag'], ['is_safe' => ['html']])
         ];
     }
 }
