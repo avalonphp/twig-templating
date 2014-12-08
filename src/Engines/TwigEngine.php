@@ -122,7 +122,7 @@ class TwigEngine implements EngineInterface
     /**
      * @return Twig_Enviornent
      */
-    public function twig()
+    public function getTwig()
     {
         return $this->twig;
     }
@@ -130,7 +130,7 @@ class TwigEngine implements EngineInterface
     /**
      * @return object
      */
-    public function loader()
+    public function getLoader()
     {
         return $this->loader;
     }
