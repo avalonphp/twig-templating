@@ -48,6 +48,7 @@ class Form extends Twig_Extension
             new Twig_SimpleFunction('form_text_field', ['Radium\Helpers\Form', 'text'], ['is_safe' => ['html']]),
             new Twig_SimpleFunction('form_password_field', ['Radium\Helpers\Form', 'password'], ['is_safe' => ['html']]),
             new Twig_SimpleFunction('form_textarea', ['Radium\Helpers\Form', 'textarea'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_select', ['Radium\Helpers\Form', 'select'], ['is_safe' => ['html']]),
 
             // Buttons
             new Twig_SimpleFunction('form_submit', ['Radium\Helpers\Form', 'submit'], ['is_safe' => ['html']])
