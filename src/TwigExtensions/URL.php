@@ -44,20 +44,8 @@ class URL extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('path', [$this, 'path'], ['is_safe' => ['html']])
+            new Twig_SimpleFunction('route', ['Radium\\Routing\\Router', 'generateUrl'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('path', ['Radium\\Http\\Request', 'basePath'], ['is_safe' => ['html']])
         ];
-    }
-
-    /**
-     * Returns the compiled path for the route.
-     *
-     * @param string $routeName
-     * @param array  $tokens
-     *
-     * @return string
-     */
-    public function path($routeName, array $tokens = [])
-    {
-        return Request::basePath(Router::generateUrl($routeName, $tokens));
     }
 }
