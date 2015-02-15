@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\Engines;
+namespace Avalon\Templating\Engines;
 
 use Twig_Environment;
 use Twig_Loader_Filesystem;
-use Radium\Templating\EngineInterface;
+use Avalon\Templating\EngineInterface;
 
 /**
  * Twig template rendering engine.

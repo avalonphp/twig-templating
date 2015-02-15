@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,11 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\TwigExtensions;
+namespace Avalon\Templating\TwigExtensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
-use Radium\Helpers\Time as TimeHelper;
+use Avalon\Helpers\Time as TimeHelper;
 
 /**
  * Time helper for Twig.

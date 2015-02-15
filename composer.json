@@ -1,7 +1,7 @@
 {
-    "name": "radium/twig-templating",
+    "name": "avalon/twig-templating",
     "description": "Adds support for Twig template rendering.",
-    "keywords": ["radium", "twig", "templating"],
+    "keywords": ["avalon", "twig", "templating"],
     "license": "Apache-2.0",
     "authors": [
         {
@@ -14,7 +14,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Radium\\Templating\\": "src/"
+            "Avalon\\Templating\\": "src/"
         }
     },
     "extra": {

@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\TwigExtensions;
+namespace Avalon\Templating\TwigExtensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
@@ -42,16 +42,16 @@ class Form extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('form_label', ['Radium\Helpers\Form', 'label'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_label', ['Avalon\Helpers\Form', 'label'], ['is_safe' => ['html']]),
 
             // Fields
-            new Twig_SimpleFunction('form_text_field', ['Radium\Helpers\Form', 'text'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('form_password_field', ['Radium\Helpers\Form', 'password'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('form_textarea', ['Radium\Helpers\Form', 'textarea'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('form_select', ['Radium\Helpers\Form', 'select'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_text_field', ['Avalon\Helpers\Form', 'text'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_password_field', ['Avalon\Helpers\Form', 'password'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_textarea', ['Avalon\Helpers\Form', 'textarea'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('form_select', ['Avalon\Helpers\Form', 'select'], ['is_safe' => ['html']]),
 
             // Buttons
-            new Twig_SimpleFunction('form_submit', ['Radium\Helpers\Form', 'submit'], ['is_safe' => ['html']])
+            new Twig_SimpleFunction('form_submit', ['Avalon\Helpers\Form', 'submit'], ['is_safe' => ['html']])
         ];
     }
 }

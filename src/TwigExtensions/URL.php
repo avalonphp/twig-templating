@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\TwigExtensions;
+namespace Avalon\Templating\TwigExtensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
-use Radium\Routing\Router;
-use Radium\Http\Request;
+use Avalon\Routing\Router;
+use Avalon\Http\Request;
 
 /**
  * URL helper for Twig.
@@ -44,8 +44,8 @@ class URL extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('route', ['Radium\\Routing\\Router', 'generateUrl'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('path', ['Radium\\Http\\Request', 'basePath'], ['is_safe' => ['html']])
+            new Twig_SimpleFunction('route', ['Avalon\\Routing\\Router', 'generateUrl'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('path', ['Avalon\\Http\\Request', 'basePath'], ['is_safe' => ['html']])
         ];
     }
 }

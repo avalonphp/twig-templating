@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\TwigExtensions;
+namespace Avalon\Templating\TwigExtensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
@@ -42,10 +42,10 @@ class HTML extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('link_to', ['Radium\Helpers\HTML', 'link'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('link_to_unless_current', ['Radium\Helpers\HTML', 'linkToUnlessCurrent'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('css_link_tag', ['Radium\Helpers\HTML', 'cssLinkTag'], ['is_safe' => ['html']]),
-            new Twig_SimpleFunction('js_inc_tag', ['Radium\Helpers\HTML', 'jsIncTag'], ['is_safe' => ['html']])
+            new Twig_SimpleFunction('link_to', ['Avalon\Helpers\HTML', 'link'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('link_to_unless_current', ['Avalon\Helpers\HTML', 'linkToUnlessCurrent'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('css_link_tag', ['Avalon\Helpers\HTML', 'cssLinkTag'], ['is_safe' => ['html']]),
+            new Twig_SimpleFunction('js_inc_tag', ['Avalon\Helpers\HTML', 'jsIncTag'], ['is_safe' => ['html']])
         ];
     }
 }

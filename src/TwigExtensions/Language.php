@@ -1,7 +1,7 @@
 <?php
 /*!
- * Radium
- * Copyright 2011-2014 Jack Polgar
+ * Avalon
+ * Copyright 2011-2015 Jack Polgar
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,12 @@
  * limitations under the License.
  */
 
-namespace Radium\Templating\TwigExtensions;
+namespace Avalon\Templating\TwigExtensions;
 
 use Twig_Extension;
 use Twig_SimpleFunction;
-use Radium\Routing\Router;
-use Radium\Http\Request;
+use Avalon\Routing\Router;
+use Avalon\Http\Request;
 
 /**
  * Language helper for Twig.
@@ -44,7 +44,7 @@ class Language extends Twig_Extension
     public function getFunctions()
     {
         return [
-            new Twig_SimpleFunction('t', ['Radium\Language', 'translate'], ['is_safe' => ['html']])
+            new Twig_SimpleFunction('t', ['Avalon\Language', 'translate'], ['is_safe' => ['html']])
         ];
     }
 }
